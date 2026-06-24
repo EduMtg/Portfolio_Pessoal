@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Projetos</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
@@ -13,15 +15,79 @@
             <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
             <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
             <a class="cabecalho__menu__link" href="contactme.html">Contatos</a>
+
+            <button class="botao-tema" type="button" aria-label="Alterar tema">
+                <img class="botao-tema__icone" src="./assets/lua.png" alt="Tema escuro">
+            </button>
         </nav>
     </header>
 
-    <main>
+    <main class="projetos">
+        <section class="projetos__conteudo">
+            <h1>Meus Projetos</h1>
 
+            <p>
+                Aqui estão alguns projetos desenvolvidos durante minha jornada acadêmica e meus estudos em tecnologia.
+            </p>
+
+            <div class="projetos__grid">
+                <article class="projetos__card">
+                    <img class="projetos__imagem" src="./assets/projetoportfolio.png"
+                        alt="Prévia do projeto Portfólio Digital">
+
+                    <h2>Portfólio Digital</h2>
+                    <p>
+                        Site pessoal desenvolvido para apresentar minha trajetória, habilidades e formas de contato.
+                    </p>
+
+                    <span>HTML, CSS e JavaScript</span>
+
+                    <div class="projetos__links">
+                        <a href="https://github.com/EduMtg/Portfolio_Pessoal" target="_blank">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="projetos__card">
+                    <img class="projetos__imagem" src="./assets/projetopy.png"
+                        alt="Prévia do projeto Monitor de preços de suplementos">
+
+                    <h2>Monitor de preços de suplementos</h2>
+                    <p>
+                        Projeto acadêmico em Python com web scraping e Streamlit.
+                    </p>
+
+                    <span>Python</span>
+
+                    <div class="projetos__links">
+                        <a href="https://github.com/EduMtg/monitor-suplementos-webscrapping/tree/main"
+                            target="_blank">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="projetos__card">
+                    <img class="projetos__imagem" src="./assets/incrementalis.png" alt="Logo do projeto Incrementalis">
+
+                    <h2>Incrementalis</h2>
+                    <p>
+                        Jogo clicker educacional sobre programação e sustentabilidade, ainda em desenvolvimento.
+                    </p>
+
+                    <span>Em breve</span>
+
+                    <div class="projetos__links">
+                        <a href="https://sites.google.com/view/incrementalis/página-do-projeto?authuser=0"
+                            target="_blank">Portfólio do Projeto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    
+
     <footer class="rodape">
         <p>&copy; 2026, feito por Eduardo Vieira Montagna.</p>
     </footer>
+
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>
